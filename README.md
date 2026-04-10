@@ -14,22 +14,31 @@ The program generates a pyramid where:
 - Nested loops
 - String multiplication
 - Basic pattern printing logic in Python
+## 📋 Pattern Rules
+- Generates **right-aligned number pyramid** pattern
+- Configurable height (default: 5 rows)
+- **Nested loops** control rows and numbers per row
+- **Dynamic spacing** for perfect right-alignment
+- Clean header and professional formatting
 
-## 💻 Code
+## 💻 Sample Output
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+## ✨ Key Features Demonstrated
+- Nested loops for 2D pattern structure
+- Dynamic spacing calculation
+- Configurable pattern height
+- Modular function design
+- Professional output formatting
 
-```python
-def print_number_pyramid(rows):
-    """Generate right-aligned number pyramid pattern using nested loops."""
-    for i in range(1, rows + 1):
-        # Print leading spaces for alignment
-        print(" " * (rows - i), end="")
-        # Print row number i times
-        for j in range(i):
-            print(i, end=" ")
-        print()  # New line
-
-# Main execution - configurable height
-HEIGHT = 5
-print(f"TII Task 2: Number Pyramid Pattern (Height: {HEIGHT})")
-print("-" * 35)
-print_number_pyramid(HEIGHT)
+## 🛠 Tech Stack
+Python 3.x
+Nested for loops
+String multiplication (" " * n)
+end="" parameter control
+## 🚀 Ready to run
+```bash
+python pyramid_game.py
